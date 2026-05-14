@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <link rel="stylesheet" href="style.css">
+
+     <style>
+
+/* classname */
+.y{
+    color: aqua;
+}
+/* id */
+ #kk{
+    color: blanchedalmond;
+}
+/* tagname */
+\h1{
+    color: blueviolet;
+} 
+/* universal selector */
+*{
+    color: blue;
+}
+/* group selector */
+#sel,.sel1{
+    color: azure;
+}
+/* combinator selector */
+#one h1{
+    color: bisque;
+}
+
+div ~h1{
+    color: blanchedalmond;
+}
+
+.three > h1{
+    color: rgb(40, 241, 22);
+}
+
+div +h1{
+    color: blue;
+}
+    </style>
+
+
+</head>
+<body>
+
+    <h1 id="kk" class="y">hello</h1>
+    <h2>hai,bye</h2>
+    <h2 id="sel">selector</h2>
+    <h2 class="sel1">selector1</h2>  
+    <div id="one">
+        <h1 id="one1">one element</h1>
+        <h2>first element</h2>
+        <div class="two">
+            <h1>2nd class</h1>
+        </div>
+        <div class="three">
+            <h1>3rd class</h1>
+            <h1>3rd class A</h1>
+        </div>
+    </div>  
+    <h1>sibling</h1>
+    <h1>sibling 2</h1>
+
+    <p style="color: rgb(228, 19, 71); border: 20px;margin: auto;">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+</body>
+</html>
