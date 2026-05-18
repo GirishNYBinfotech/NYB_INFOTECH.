@@ -1,0 +1,10 @@
+div{
+            display: flex ;
+            background-color: rgb(192, 189, 8);
+            justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: right;
+            justify-content: left;
+        }
