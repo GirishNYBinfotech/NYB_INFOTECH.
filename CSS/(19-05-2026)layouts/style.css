@@ -1,0 +1,38 @@
+.box{
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+        #buttonbox1{
+            display: flex;
+            background-color: blue;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: right;
+            justify-content: left;
+        }
+
+        #buttonbox2{
+            display: grid;
+            background-color: rgb(7, 236, 225);
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: left;
+            justify-content: right;
+            justify-content: center;
+        }
+
+        #newbutton{
+            display: flex;
+             background-color: chartreuse;
+             
+        }
