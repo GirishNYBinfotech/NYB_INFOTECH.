@@ -90,6 +90,15 @@ function outer() {
 const myFunc = outer()
 myFunc()
 
+//>>First-class function
+function greeting(message) {
+    return function (name) {
+        console.log(message + " " + name)
+    }
+}
+const welcome = greeting("Welcome")
+welcome("Girish")
+
 //Passing Functions as Arguments
 function g(name) {
     return "Hello, "+name
@@ -108,7 +117,7 @@ function multiplier(factor) {
 const double = multiplier(2)
 console.log(double(5))
 
-//pure function
+//>>pure function
 function a(a,b){
     return a+b
 }
@@ -126,7 +135,7 @@ function Total(price, quantity) {
 }
 console.log(Total(100, 2))
 
-//impure function
+//>>impure function
 function showTime() {
     return new Date().getSeconds()
 }
