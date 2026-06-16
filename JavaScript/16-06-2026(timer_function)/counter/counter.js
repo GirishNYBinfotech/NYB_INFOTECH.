@@ -18,3 +18,4 @@ function resetTimer(){
     timeLeft=10
     document.getElementById("timer").textContent=timeLeft
 }
+console.log(document.documentElement);
