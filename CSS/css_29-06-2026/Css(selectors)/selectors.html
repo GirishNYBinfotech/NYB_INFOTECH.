@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./selector.css">
+    <style>
+        h1{
+            color: rgba(0, 0, 0, 0.322);
+        }
+        .same{
+            color: blueviolet;
+        }
+        #new{
+            color: aqua;
+        }
+
+        /* universal selector */
+        *{
+            color: rgb(10, 231, 121);
+        } 
+
+        /* group selector */
+        #old,#new{
+            color: black;
+        } 
+
+         /* combinator selector */
+        /* child selector */
+        /* div>h2{
+        color: blue;
+        } */
+
+        /* allsiblings */
+        /* div~h3{
+        color: black;
+        } */
+        
+        /* Descendant Selector */
+        /* div h2{
+            color: brown;
+        } */
+
+         /* Adjacent Sibling Selector */
+         div+h3{
+            color: chartreuse;
+         }
+    </style>
+</head>
+<body>
+    <h1 style="color: brown;">welcome to webpage</h1>
+    <h3 id="new" class="same">hello</h3>
+    <h3 id="old">about</h3>
+    <h3 id="external">external css</h3>
+    <h2 >information</h2>
+    <div id="parent">
+        <h2>h2 child element</h2>
+        <h1>h1 child element</h1>
+        <h1>h1 child2 element</h1>
+        <div class="child1">
+            <h2 id="h2">this is child element h2 tag</h2>
+        </div>
+    </div>
+    <h3>sibling of parent</h3>
+    <h3>second sibling of parent</h3>
+</body>
+</html>

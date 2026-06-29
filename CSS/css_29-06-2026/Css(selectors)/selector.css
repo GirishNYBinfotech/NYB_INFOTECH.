@@ -1,0 +1,53 @@
+#external{
+    color: red;
+}
+
+/* 1. Universal Selector */
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+/* 2. Element Selector */
+h1{
+    color: navy;
+}
+
+/* 3. Class Selector */
+.note{
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* 4. ID Selector */
+#principal{
+    color: red;
+    font-size: 22px;
+}
+
+/* 5. Group Selector */
+h2,p{
+    border-bottom:1px solid gray;
+}
+
+/* 6. Descendant Selector */
+.department p{
+    color: blue;
+}
+
+/* 7. Child Selector */
+.course > p{
+    background-color: lightyellow;
+}
+
+/* 8. Adjacent Sibling Selector */
+h3+p{
+    color: purple;
+}
+
+/* 9. General Sibling Selector */
+h4 ~ p{
+    color: green;
+}
+
+        
