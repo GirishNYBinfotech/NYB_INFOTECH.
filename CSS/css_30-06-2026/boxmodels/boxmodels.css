@@ -1,0 +1,28 @@
+/* content box */
+#box2{
+    box-sizing: content-box;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: rgb(127, 233, 7);
+    border-style: dotted;
+    border-color: brown;
+    margin: 20px;
+    margin-left: 400px;
+    padding: 10%;
+    overflow: hidden;
+    outline: 20px;
+    border: 10px solid black;
+    padding-left: 20px;
+    }
+
+/* outline */
+#h3tag{
+    height: auto;
+    width: 70%;
+    border-style: dotted;
+    outline: auto;
+    outline-style: dashed;
+    outline-color: blue;
+    outline-width: 8px;
+    outline-offset: 5px;
+}

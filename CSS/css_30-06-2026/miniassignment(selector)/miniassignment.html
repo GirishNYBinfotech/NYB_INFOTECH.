@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniassignment</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./mininaassignment.css">
+    <style>
+        /* Universal Selector */
+        *{
+        margin:20px;
+        padding:5px;
+        }
+
+        /* Element Selector */
+        body{
+            background:#f4f4f4;
+        }
+
+        /* ID Selector */
+        #header{
+            background:#0066cc;
+            color:white;
+            text-align:center;
+            padding:20px;
+            border-radius: 15px;
+        }
+
+        /* Group Selector */
+        h2,p{
+            margin:10px 0;
+        }
+
+        /* Descendant Selector */
+        .card p{
+            color:#444;
+        }
+
+        /* Child Selector */
+        .container > div{
+            margin:15px;
+        }
+
+        /* Background Image */
+        .banner{
+            background-image:url("https://picsum.photos/900/250");
+            background-size:cover;
+            background-position:center;
+            height:250px;
+            border-radius:15px;
+            margin:20px;
+            }
+
+        /* Width & Height */
+        .box{
+            width:250px;
+            height:120px;
+            background:orange;
+            border:4px dashed red;
+            border-radius:20px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+    <h1>CSS Demo</h1>
+    </div>
+    <div class="banner"></div>
+    <div class="container">
+    <div class="card">
+        <h2>Inline CSS</h2>
+        <p style="color:red;font-size:20px;">This paragraph uses Inline CSS.</p>
+    </div>
+
+    <div class="card">
+        <h2>Border Styles</h2>
+        <p style="border:3px solid blue;padding:10px;">Solid Border</p>
+        <p style="border:3px dotted red;padding:10px;">Dotted Border</p>
+        <p style="border:3px dashed green;padding:10px;border-radius:15px;">Dashed Border with Rounded Corners</p>
+    </div>
+
+    <div class="card">
+        <h2>Width & Height</h2>
+        <div class="box">
+            250px × 120px
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Background Color</h2>
+    <p style="background:lightgreen;padding:15px;">This paragraph has a background color.</p>
+</div>
+
+</body>
+</html>

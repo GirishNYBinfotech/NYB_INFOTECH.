@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodels</title>
+    <link rel="stylesheet" href="./boxmodels.css">
+    <style>
+        /* border box */
+        #box1{
+            box-sizing: border-box;
+            width: 400px;
+            min-height: 100px;
+            background-color: burlywood;
+            border-style: double;
+            border-color: blueviolet;
+            margin: 30px;
+            margin-left: 500px;
+            padding: 50px;
+            padding-right: 400px;
+        }
+        /* overflow */
+        #first{
+            width: 50%;
+            height: 100px;
+            background-color: rgb(12, 197, 230);
+            overflow: scroll;
+            border: 2px solid black;
+        }
+        #second{
+            width: 50%;
+            height: 100px;
+            background-color: rgb(47, 91, 99);
+            overflow: auto;
+            border: 2px solid black;
+        }
+        #third{
+             width: 50%;
+            height: 50px;
+            background-color: rgb(8, 214, 77);
+            overflow: hidden;
+            border: 2px solid black;
+
+        }
+        #fouth{
+            width: 50%;
+            height: 100px;
+            background-color: rgb(218, 233, 11);
+            overflow: visible;
+            border: 2px solid black;
+        }
+        /* margin */
+        #one{
+            color: coral;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: blueviolet;">first line</h1>
+    <!-- box models -->
+     <h1>box models</h1>
+    <h1 id="h1tag" style="background-color: blue;border: 2px solid black;width: 50%;padding: 2px; margin: 20px;">this is h1 tag</h1>
+    <h1 id="h1tag1" style="background-color: rgb(7, 231, 101);">this is h1 tag</h1>
+
+    <!-- box sizings -->
+     <h1>box model</h1>
+    <div id="box1">
+        <h1>first border box Lorem ipsum dolor sit.</h1>
+    </div>
+    <div id="box2">
+        <h1>second content box Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    </div>
+
+    <!-- overflow -->
+    <div >
+        <h2>overflow</h2>
+        <h2 id="first">overflow Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, aspernatur, ea necessitatibus atque quasi at dicta sapiente nesciunt eaque deserunt in voluptate porro explicabo aperiam praesentium non? Sequi, cumque assumenda.</h2>
+        <h2 id="second">overflow Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, aspernatur, ea necessitatibus atque quasi at dicta sapiente nesciunt eaque deserunt in voluptate porro explicabo aperiam praesentium non? Sequi, cumque assumenda.</h2>
+        <h2 id="third">overflow Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, aspernatur, ea necessitatibus atque quasi at dicta sapiente nesciunt eaque deserunt in voluptate porro explicabo aperiam praesentium non? Sequi, cumque assumenda.</h2>
+        <h2 id="fourth">overflow Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, aspernatur, ea necessitatibus atque quasi at dicta sapiente nesciunt eaque deserunt in voluptate porro explicabo aperiam praesentium non? Sequi, cumque assumenda.</h2>
+    </div>
+
+    <!-- outline -->
+     <h3>outline</h3>
+     <div>
+        <h3 id="h3tag">Lorem ipsum dolor sit amet.</h3>
+     </div>
+
+     <!-- margin collapse -->
+      <h4>margin</h4>
+      <div>
+        <h4 id="one">Lorem, ipsum dolor.</h4>
+      </div>
+</body>
+</html>
