@@ -1,0 +1,235 @@
+*{    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;  
+}
+
+/* HEADER */
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* NAVIGATION (Flexbox) */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background:#34495e;
+    padding:15px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+}
+
+/* MAIN CONTAINER */
+.container{
+    width:90%;
+    margin:20px auto;
+}
+
+/* BOX MODEL */
+.box-model{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border:5px solid steelblue;
+}
+
+.box{
+    width:220px;
+    padding:20px;
+    border:6px solid red;
+    margin:20px auto;
+    background:lightyellow;
+    text-align:center;
+}
+
+
+/* DISPLAY PROPERTIES */
+.display-demo{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+}
+
+.block{
+    display:block;
+    background:tomato;
+    color:white;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.inline{
+    display:inline;
+    background:green;
+    color:white;
+    padding:10px;
+}
+
+.inline-block{
+    display:inline-block;
+    background:royalblue;
+    color:white;
+    padding:10px;
+    width:120px;
+    text-align:center;
+    margin-top:10px;
+}
+
+/* POSITIONING */
+.position-demo{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+}
+
+.relative-box{
+    position:relative;
+    width:300px;
+    height:180px;
+    background:#ddd;
+    margin:auto;
+}
+
+.absolute-box{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:10px;
+}
+
+.fixed-box{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    background:black;
+    color:white;
+    padding:10px;
+}
+
+.sticky-box{
+    position:sticky;
+    top:0;
+    background:orange;
+    padding:10px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+/* FLOAT & CLEAR */
+.float-demo{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+}
+
+.float-left{
+    float:left;
+    width:45%;
+    background:skyblue;
+    padding:20px;
+}
+
+.float-right{
+    float:right;
+    width:45%;
+    background:lightgreen;
+    padding:20px;
+}
+
+.clear{
+    clear:both;
+}
+
+/* FLEXBOX */
+.flex-demo{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+}
+
+.flex-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.flex-item{
+    background:purple;
+    color:white;
+    padding:25px;
+    width:150px;
+    text-align:center;
+}
+
+/* GRID */
+
+.grid-demo{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.grid-item{
+    background:#16a085;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width:768px){
+nav{
+    flex-direction:column;
+}
+.float-left,.float-right{
+    float:none;
+    width:100%;
+    margin-bottom:15px;
+}
+.grid-container{
+    grid-template-columns:repeat(2,1fr);
+}
+.flex-container{
+    flex-direction:column;
+}
+}
+@media(max-width:500px){
+.grid-container{
+    grid-template-columns:1fr;
+}
+.box{
+    width:100%;
+}
+}

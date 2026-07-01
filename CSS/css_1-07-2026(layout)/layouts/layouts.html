@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layouts</title>
+    <link rel="stylesheet" href="./layouts.css">
+    <style>
+        /* order */
+        .container1{
+            display: flex;
+            margin: 10px;
+        }
+        .item1 {
+            order: 3;
+        }
+        .item2 {
+            order: 1;
+        }
+        .item3 {
+            order: 2;
+        }
+
+        /* flexgrow */
+        .container2{
+            display:flex;
+            width:600px;
+            margin: 10px;
+        }
+        .item{
+            width:100px;
+            height:80px;
+            border:1px solid black;
+        }
+        .one{
+            flex-grow:2;
+        }
+        .two{
+            flex-grow:1;
+        }
+        .three{
+            flex-grow:1;
+        }
+
+        /* grid */
+        .gridcontainer{
+            display:grid;
+            align-items: center;
+            border: 2px solid black;
+            height: 180px;
+            justify-items: center;
+            margin: 10px;
+            grid-template-columns:repeat(3,200px);
+            /* grid-template-rows:repeat(4,25%) ; */
+        }
+        .one1{
+            height: 30px;
+            width: 50%;
+            border: 2px solid black;
+            background-color: rgb(71, 71, 145);
+        }
+
+        /* grid-row/coloumn */
+        .container3{
+            display: grid;
+            border: 2px solid black;
+            height: 200px;
+            width: 60%;
+            margin-bottom: 30px;
+            grid-template-columns: repeat(3, 200px);
+            /* grid-template-rows: repeat(2,200px); */
+        }
+        .items{
+            grid-column: 1/4;
+            /* grid-row: 1/3; */
+        }
+
+        /* z-index */
+        .on{
+            height: 150px;
+            width: 20%;
+            border: 2px solid black;
+            color: aqua;
+            background-color: blueviolet;
+            align-content: center;
+            position: absolute;
+            z-index: 2;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .on2{
+            height: 200px;
+            width: 30%;
+            color: aqua;
+            border: 2px solid black;
+            background-color: brown;
+            position:absolute;
+            z-index: 1;
+        }
+        /* visibility */
+        #v{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- layout -->
+    <!-- flex container -->
+     <h2>flex container</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <!-- order -->
+     <h2>order</h2>
+    <div class="container1">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+    <!-- flexgrow -->
+     <h2>flexgrow</h2>
+    <div class="container2">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+    </div>
+    <!-- cssgrid -->
+     <h2>css grid</h2>
+    <div class="gridcontainer">
+        <div class="one1">1</div>
+        <div class="one1">2</div>
+        <div class="one1">3</div>
+        <div class="one1">4</div>
+    </div>
+    <!-- grid row/column -->
+     <h2>grid row/column</h2>
+    <div class="container3">
+        <div class="items">A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <h2>visibility</h2>
+    <div id="v">
+        <h2>A</h2>
+        <h2>B</h2>
+        <h2>C</h2>
+    </div>
+    <!-- z-index -->
+     <h2>z-index</h2>
+    <div>
+        <div class="on">first</div>
+        <div class="on2">second</div>
+    </div>
+    
+</body>
+</html>

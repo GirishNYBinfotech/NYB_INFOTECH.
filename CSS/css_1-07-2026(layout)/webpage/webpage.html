@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link rel="stylesheet" href="./webpage.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial;
+        }
+
+        /* Header */
+        header{
+            background:blue;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* Flexbox */
+        nav{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            background:black;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+        }
+
+        /* Grid Layout */
+        .container{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+            padding:20px;
+        }
+
+        .box{
+            background:lightblue;
+            padding:40px;
+            text-align:center;
+            border:2px solid blue;
+        }
+
+        /* Footer */
+        footer{
+            background:gray;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+        /* Responsive */
+        @media(max-width:600px){
+
+            nav{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .container{
+                grid-template-columns:1fr;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Responsive Webpage</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+</div>
+<footer>
+    <h3>webpage end</h3>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* flex box */
+.navbar{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:steelblue;
+    color:white;
+    padding:15px;
+    margin: 20px;
+}
+
+/* grid */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery div{
+    background:skyblue;
+    padding:50px;
+    text-align:center;
+}
