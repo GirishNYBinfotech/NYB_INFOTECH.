@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile view</title>
+    <link rel="stylesheet" href="./mediaquery.css">
+    <style>
+        nav{
+            display:flex;
+            justify-content:space-around;
+            background:#333;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+        }
+
+        /* Mobile */
+        @media(max-width:768px){
+            nav{
+                flex-direction:column;
+                align-items:center;
+        }
+
+        nav a{
+        padding:10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html>
