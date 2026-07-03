@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete CSS Demo</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+section{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    margin-bottom:15px;
+    color:blue;
+}
+
+/*  CONTENT, PADDING, BORDER, MARGIN */
+
+.box{
+    width:200px;
+    height:100px;
+    background:skyblue;
+    padding:20px;
+    border:5px solid blue;
+    margin:20px;
+}
+
+/* Width Height */
+.size{
+    width:300px;
+    height:120px;
+    background:orange;
+}
+
+/* Box Sizing */
+
+.content-box{
+    width:250px;
+    padding:30px;
+    border:10px solid black;
+    box-sizing:content-box;
+    background:lightgreen;
+    margin-bottom:20px;
+}
+
+.border-box{
+    width:250px;
+    padding:30px;
+    border:10px solid black;
+    box-sizing:border-box;
+    background:pink;
+}
+
+/* Margin Collapse */
+
+.one{
+    margin-bottom:40px;
+    height:80px;
+    background:red;
+}
+
+.two{
+    margin-top:40px;
+    height:80px;
+    background:green;
+}
+
+/* Overflow */
+
+.overflow{
+    width:250px;
+    height:100px;
+    border:2px solid black;
+    overflow:auto;
+}
+
+/* Outline */
+
+.outline{
+    width:200px;
+    padding:20px;
+    border:2px solid black;
+    outline:5px dashed red;
+}
+
+/* Display */
+
+.block span{
+    display:block;
+    background:yellow;
+}
+
+.inline div{
+    display:inline;
+    background:cyan;
+}
+
+.inline-block div{
+    display:inline-block;
+    width:120px;
+    background:orange;
+    margin:5px;
+}
+
+.none{
+    display:none;
+}
+
+/* Position */
+
+.static{
+    position:static;
+    background:lightblue;
+}
+
+.relative{
+    position:relative;
+    left:40px;
+    background:lightgreen;
+}
+
+.parent{
+    position:relative;
+    height:150px;
+    background:#ddd;
+}
+
+.absolute{
+    position:absolute;
+    right:20px;
+    top:20px;
+    background:red;
+    color:white;
+    padding:10px;
+}
+
+.fixed{
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    background:black;
+    color:white;
+    padding:10px;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+    background:purple;
+    color:white;
+    padding:10px;
+}
+
+/* Float */
+
+.float-img{
+    float:left;
+    width:120px;
+    margin-right:20px;
+}
+
+.clear{
+    clear:both;
+}
+
+/* Flex */
+
+.flex{
+    display:flex;
+    height:250px;
+    border:2px solid black;
+
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    align-content:space-around;
+    gap:20px;
+}
+
+.flex div{
+    width:100px;
+    height:100px;
+    background:orange;
+}
+
+.item1{
+    order:2;
+    flex-grow:1;
+}
+
+.item2{
+    order:1;
+    flex-basis:150px;
+}
+
+.item3{
+    flex-shrink:0;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:100px 100px;
+    gap:20px;
+    justify-items:center;
+    align-items:center;
+}
+.grid div{
+    background:skyblue;
+    padding:20px;
+}
+.grid1{
+    grid-column:1/3;
+}
+.grid2{
+    grid-row:1/3;
+}
+
+/* Z-index */
+.zparent{
+    position:relative;
+    height:180px;
+}
+.red{
+    position:absolute;
+    left:30px;
+    top:30px;
+    width:100px;
+    height:100px;
+    background:red;
+    z-index:2;
+}
+.green{
+    position:absolute;
+    left:70px;
+    top:70px;
+    width:100px;
+    height:100px;
+    background:green;
+    z-index:1;
+}
+
+/* Visibility */
+.hide{
+    visibility:hidden;
+}
+
+/* Responsive Layout */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.card{
+    flex:250px;
+    background:lightblue;
+    padding:20px;
+    text-align:center;
+}
+
+/* Media Query */
+@media(max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+    .flex{
+        flex-direction:column;
+        height:auto;
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>Complete CSS Demo</h1>
+    <div class="sticky">Sticky Header</div>
+    <section>
+        <h2>Content, Padding, Border & Margin</h2>
+        <div class="box">Content Area</div>
+    </section>
+    
+    <section>
+        <h2>Width & Height</h2>
+        <div class="size"></div>
+    </section>
+
+    <section>
+        <h2>Box Sizing</h2>
+        <div class="content-box">Content Box</div>
+        <br>
+        <div class="border-box">Border Box</div>
+    </section>
+
+    <section>
+        <h2>Margin Collapse</h2>
+        <div class="one"></div>
+        <div class="two"></div>
+    </section>
+
+    <section>
+        <h2>Overflow</h2>
+        <div class="overflow">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+        </div>
+    </section>
+
+    <section>
+        <h2>Outline</h2>
+        <div class="outline">Outline Example</div>
+    </section>
+
+    <section>
+        <h2>Display</h2>
+        <h3>Block</h3>
+        <div class="block">
+            <span>One</span>
+            <span>Two</span>
+        </div>
+
+        <h3>Inline</h3>
+        <div class="inline">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+        <h3>Inline Block</h3>
+        <div class="inline-block">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+        </div>
+
+        <p class="none">Hidden Paragraph</p>
+    </section>
+
+    <section>
+        <h2>Position</h2>
+        <div class="static">Static</div>
+        <br>
+        <div class="relative">Relative</div>
+        <br>
+        <div class="parent">
+            <div class="absolute">Absolute</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Float & Clear</h2>
+        <img src="./web.png" class="float-img">
+        <p>This text wraps around the image using float.</p>
+        <p class="clear">This paragraph starts below the image.</p>
+    </section>
+
+    <section>
+        <h2>Flexbox</h2>
+        <div class="flex">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>CSS Grid</h2>
+        <div class="grid">
+            <div class="grid1">1</div>
+            <div class="grid2">2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Z-Index</h2>
+        <div class="zparent">
+            <div class="red"></div>
+            <div class="green"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Visibility</h2>
+        <p>Visible Paragraph</p>
+       <p class="hide">Hidden Paragraph</p>
+        <p>Visible Again</p>
+    </section>
+
+    <section>
+        <h2>Responsive Layout</h2>
+        <div class="container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+        </div>
+    </section>
+
+    <div class="fixed">Fixed Button</div>
+
+</body>
+</html>
