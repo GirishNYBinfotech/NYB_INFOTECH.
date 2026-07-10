@@ -1,0 +1,27 @@
+import React from 'react'
+
+function Put() {
+    const updatePost = () => {
+    fetch("https://jsonplaceholder.typicode.com/posts/1", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: 1,
+        title: "Updated Title",
+        body: "Updated Body",
+        userId: 1,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+  }
+  return (
+    <div>
+      <button onClick={updatePost}>PUT Request</button>
+    </div>
+  );
+}
+export default Put
