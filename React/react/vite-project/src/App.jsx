@@ -19,6 +19,10 @@ import Contextsharingpage from './pages_09-07-2026/context_13-07-2027/Contextsha
 import Authenticationpage1 from './pages_09-07-2026/context_13-07-2027/Authenticationpage1';
 import Themepage from './pages_09-07-2026/context_13-07-2027/Themepage';
 import Contextspage from './pages_09-07-2026/context_13-07-2027/Contextspage';
+import Counterpage from './pages_09-07-2026/Redux_14-07-2026/Counterpage';
+import Employeepages from './pages_09-07-2026/Redux_14-07-2026/Employeepages';
+import ContextEmppage from './pages_09-07-2026/Redux_14-07-2026/ContextEMPpage';
+import Slicepage from './pages_09-07-2026/Redux_14-07-2026/Slicepage';
 
 
 
@@ -45,6 +49,10 @@ function App() {
     <Route path='/authentication' element={<Authenticationpage1/>}/>  
     <Route path='/theme' element={<Themepage/>}/>  
     <Route path='/infile' element={<Contextspage/>}/>  
+    <Route path='/counter' element={<Counterpage/>}/> 
+    <Route path='/emp' element={<Employeepages/>}/> 
+    <Route path='/emp1' element={<ContextEmppage/>}/> 
+    <Route path='/slice' element={<Slicepage/>}/> 
   </Routes>
   </BrowserRouter>
   )
