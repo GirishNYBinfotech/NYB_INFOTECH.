@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { deleteEmployee } from "./employeeSlice";
 
-function EmployeeList() {
+function REmployeeList() {
 
   console.log("📋 Redux EmployeeList Rendered");
 
@@ -67,4 +67,4 @@ function EmployeeList() {
 
 }
 
-export default EmployeeList;
+export default REmployeeList;

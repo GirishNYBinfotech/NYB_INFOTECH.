@@ -21,8 +21,15 @@ import Themepage from './pages_09-07-2026/context_13-07-2027/Themepage';
 import Contextspage from './pages_09-07-2026/context_13-07-2027/Contextspage';
 import Counterpage from './pages_09-07-2026/Redux_14-07-2026/Counterpage';
 import Employeepages from './pages_09-07-2026/Redux_14-07-2026/Employeepages';
-import ContextEmppage from './pages_09-07-2026/Redux_14-07-2026/ContextEMPpage';
+import Providerpage from './pages_09-07-2026/Redux_14-07-2026/Providerpage';
 import Slicepage from './pages_09-07-2026/Redux_14-07-2026/Slicepage';
+import CounterP from './pages_09-07-2026/Redux15-07-2026/CounterP';
+import Practicalpage from './pages_09-07-2026/Redux15-07-2026/practicalpage';
+import Newpage from './pages_09-07-2026/Redux15-07-2026/Newpage';
+import Cartpage from './pages_09-07-2026/Redux15-07-2026/Cartpage';
+import StudentManagement from './components_09-07-2026/Redux_15-07-2026/Student/StudentMangement';
+import Studentformpage from './pages_09-07-2026/Redux15-07-2026/Studentformpage';
+// import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
 
@@ -51,8 +58,16 @@ function App() {
     <Route path='/infile' element={<Contextspage/>}/>  
     <Route path='/counter' element={<Counterpage/>}/> 
     <Route path='/emp' element={<Employeepages/>}/> 
-    <Route path='/emp1' element={<ContextEmppage/>}/> 
+    <Route path='/emp1' element={<Providerpage/>}/> 
     <Route path='/slice' element={<Slicepage/>}/> 
+    <Route path='/coun' element={<CounterP/>}/> 
+    <Route path='/practical' element={<Practicalpage/>}/> 
+    <Route path='/new' element={<Newpage/>}/>
+    <Route path='/cart' element={<Cartpage/>}/>  
+    <Route path='/student' element={<StudentManagement/>}/> 
+    {/* <Route path='/p' element={<Providerpage/>}/>  */}
+    <Route path='/studentform' element={<Studentformpage/>}/>
+
   </Routes>
   </BrowserRouter>
   )

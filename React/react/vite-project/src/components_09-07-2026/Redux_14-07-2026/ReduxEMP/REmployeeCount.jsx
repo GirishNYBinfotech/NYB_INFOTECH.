@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-function EmployeeCount() {
+function REmployeeCount() {
 
   console.log("🔢 Redux EmployeeCount Rendered");
 
@@ -30,4 +30,4 @@ function EmployeeCount() {
 
 }
 
-export default EmployeeCount;
+export default REmployeeCount;

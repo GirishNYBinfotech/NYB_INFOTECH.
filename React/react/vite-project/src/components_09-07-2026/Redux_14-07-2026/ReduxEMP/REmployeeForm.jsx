@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 
 import { addEmployee } from "./employeeSlice";
 
-function EmployeeForm() {
+function REmployeeForm() {
 
   console.log("📝 Redux EmployeeForm Rendered");
 
@@ -92,4 +92,4 @@ function EmployeeForm() {
 
 }
 
-export default EmployeeForm;
+export default REmployeeForm;

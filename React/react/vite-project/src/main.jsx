@@ -4,11 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import { Provider } from "react-redux";
 import store from "../src/components_09-07-2026/Redux_14-07-2026/Redux/Store.jsx";
+import CounterProvider from './components_09-07-2026/Redux_14-07-2026/Contextapi/ProviderCounter.jsx';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <Provider store={store}>
-      <App />
+      <CounterProvider>
+        <App />
+      </CounterProvider>
     </Provider>
   </React.StrictMode>
 )
