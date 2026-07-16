@@ -29,6 +29,11 @@ import Newpage from './pages_09-07-2026/Redux15-07-2026/Newpage';
 import Cartpage from './pages_09-07-2026/Redux15-07-2026/Cartpage';
 import StudentManagement from './components_09-07-2026/Redux_15-07-2026/Student/StudentMangement';
 import Studentformpage from './pages_09-07-2026/Redux15-07-2026/Studentformpage';
+import Contextspages from './pages_09-07-2026/Practice_16-07-2026/Contextspages';
+import Newformpage from './pages_09-07-2026/Practice_16-07-2026/Empform/Newformpage';
+import Cartpages from './pages_09-07-2026/Practice_16-07-2026/newpage/Cartpages';
+import MiniProjectpages from './pages_09-07-2026/Practice_16-07-2026/Mini-projext/Miniprojectpages';
+import Reduxtoolpage from './pages_09-07-2026/Practice_16-07-2026/Reduxtoolpage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -67,7 +72,11 @@ function App() {
     <Route path='/student' element={<StudentManagement/>}/> 
     {/* <Route path='/p' element={<Providerpage/>}/>  */}
     <Route path='/studentform' element={<Studentformpage/>}/>
-
+    <Route path='/context1' element={<Contextspages/>}/>
+    <Route path='/form' element={<Newformpage/>}/>
+    <Route path='/cart1' element={<Cartpages/>}/>
+    <Route path='/miniproject1' element={<MiniProjectpages/>}/>
+    <Route path='/tool' element={<Reduxtoolpage/>}/>
   </Routes>
   </BrowserRouter>
   )
