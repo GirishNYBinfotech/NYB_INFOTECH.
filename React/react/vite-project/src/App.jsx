@@ -34,6 +34,10 @@ import Newformpage from './pages_09-07-2026/Practice_16-07-2026/Empform/Newformp
 import Cartpages from './pages_09-07-2026/Practice_16-07-2026/newpage/Cartpages';
 import MiniProjectpages from './pages_09-07-2026/Practice_16-07-2026/Mini-projext/Miniprojectpages';
 import Reduxtoolpage from './pages_09-07-2026/Practice_16-07-2026/Reduxtoolpage';
+import ProbsandStatepage from './pages_09-07-2026/new_17-07-2026/Probs and statepages/ProbsandStatepage';
+import APIspage from './pages_09-07-2026/new_17-07-2026/API/APIspage';
+import StateManagmentpage from './pages_09-07-2026/new_17-07-2026/Statemanagment.jsx/StateManagmentpage';
+import Assignmentpages from './pages_09-07-2026/new_17-07-2026/Assignment/Assignmentpages';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -77,6 +81,10 @@ function App() {
     <Route path='/cart1' element={<Cartpages/>}/>
     <Route path='/miniproject1' element={<MiniProjectpages/>}/>
     <Route path='/tool' element={<Reduxtoolpage/>}/>
+    <Route path='/newprobs' element={<ProbsandStatepage/>}/>
+    <Route path='/apicall' element={<APIspage/>}/>
+    <Route path='/redux' element={<StateManagmentpage/>}/>
+    <Route path='/assignment1' element={<Assignmentpages/>}/>
   </Routes>
   </BrowserRouter>
   )
