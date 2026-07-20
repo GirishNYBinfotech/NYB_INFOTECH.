@@ -38,6 +38,14 @@ import ProbsandStatepage from './pages_09-07-2026/new_17-07-2026/Probs and state
 import APIspage from './pages_09-07-2026/new_17-07-2026/API/APIspage';
 import StateManagmentpage from './pages_09-07-2026/new_17-07-2026/Statemanagment.jsx/StateManagmentpage';
 import Assignmentpages from './pages_09-07-2026/new_17-07-2026/Assignment/Assignmentpages';
+import Conditionalpage from './pages_09-07-2026/ConditionalRendering_20-07-2026/ConditionlPage/Conditionalpage';
+import Showorhidepage from './pages_09-07-2026/ConditionalRendering_20-07-2026/Showorhidepage/Showorhidepage';
+import Authenticationpagess from './pages_09-07-2026/ConditionalRendering_20-07-2026/Auhentication/Authenticationpage';
+import Lodingpage from './pages_09-07-2026/ConditionalRendering_20-07-2026/Lodingpage/Lodingpage';
+import Loginorlogout from './pages_09-07-2026/ConditionalRendering_20-07-2026/Loginorlogout';
+import Userpages from './pages_09-07-2026/ConditionalRendering_20-07-2026/Userpages';
+import Maininputpage from './pages_09-07-2026/ConditionalRendering_20-07-2026/Maininputpage';
+import Preventdefaultpage from './pages_09-07-2026/ConditionalRendering_20-07-2026/Preventdefaultpage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -85,6 +93,14 @@ function App() {
     <Route path='/apicall' element={<APIspage/>}/>
     <Route path='/redux' element={<StateManagmentpage/>}/>
     <Route path='/assignment1' element={<Assignmentpages/>}/>
+    <Route path='/conditional' element={<Conditionalpage/>}/>
+    <Route path='/sh' element={<Showorhidepage/>}/>
+    <Route path='/u' element={<Authenticationpagess/>}/>
+    <Route path='/loding' element={<Lodingpage/>}/>
+    <Route path='/log' element={<Loginorlogout/>}/>
+    <Route path='/dep' element={<Userpages/>}/>
+    <Route path='/mainpage' element={<Maininputpage/>}/>
+    <Route path='/prevent' element={<Preventdefaultpage/>}/>
   </Routes>
   </BrowserRouter>
   )
