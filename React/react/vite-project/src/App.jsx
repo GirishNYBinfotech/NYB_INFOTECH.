@@ -46,6 +46,13 @@ import Loginorlogout from './pages_09-07-2026/ConditionalRendering_20-07-2026/Lo
 import Userpages from './pages_09-07-2026/ConditionalRendering_20-07-2026/Userpages';
 import Maininputpage from './pages_09-07-2026/ConditionalRendering_20-07-2026/Maininputpage';
 import Preventdefaultpage from './pages_09-07-2026/ConditionalRendering_20-07-2026/Preventdefaultpage';
+import UseEffectpage from './pages_09-07-2026/UseEffect&map_21-07-2026/UseEffect/UseEffectpage';
+import Lifcyclepage from './pages_09-07-2026/UseEffect&map_21-07-2026/UseEffect/Lifcyclepage';
+import Cleanuppage from './pages_09-07-2026/UseEffect&map_21-07-2026/UseEffect/Cleanuppage';
+import APIPage from './pages_09-07-2026/UseEffect&map_21-07-2026/API/APIPage';
+import Mappage from './pages_09-07-2026/UseEffect&map_21-07-2026/Mappage';
+import Lodingerrorpage from './pages_09-07-2026/UseEffect&map_21-07-2026/Lodingerrorpage';
+import Practicepage from './pages_09-07-2026/UseEffect&map_21-07-2026/Practicepage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -101,6 +108,13 @@ function App() {
     <Route path='/dep' element={<Userpages/>}/>
     <Route path='/mainpage' element={<Maininputpage/>}/>
     <Route path='/prevent' element={<Preventdefaultpage/>}/>
+    <Route path='/useEffect' element={<UseEffectpage/>}/>
+    <Route path='/dependency' element={<Lifcyclepage/>}/>
+    <Route path='/cleanup' element={<Cleanuppage/>}/>
+    <Route path='/apiuseeffect' element={<APIPage/>}/>
+    <Route path='/map' element={<Mappage/>}/>
+    <Route path='/Eloding' element={<Lodingerrorpage/>}/>
+    <Route path='/practiceapi' element={<Practicepage/>}/>
   </Routes>
   </BrowserRouter>
   )
