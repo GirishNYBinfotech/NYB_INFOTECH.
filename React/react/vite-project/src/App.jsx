@@ -53,6 +53,13 @@ import APIPage from './pages_09-07-2026/UseEffect&map_21-07-2026/API/APIPage';
 import Mappage from './pages_09-07-2026/UseEffect&map_21-07-2026/Mappage';
 import Lodingerrorpage from './pages_09-07-2026/UseEffect&map_21-07-2026/Lodingerrorpage';
 import Practicepage from './pages_09-07-2026/UseEffect&map_21-07-2026/Practicepage';
+import ControlledFormpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/ControlledFormpage';
+import InputField from './pages_09-07-2026/Dynamic_Form_Handlingpage/Field&boxe/Field_box';
+import MultipleInputpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/MultipleInputpage';
+import FormValidationpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/FormValidationpage';
+import Field_box from './pages_09-07-2026/Dynamic_Form_Handlingpage/Field&boxe/Field_box';
+import Registerationformpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/Registerationformpage';
+import Formfieldpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/Formfieldpage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -115,6 +122,12 @@ function App() {
     <Route path='/map' element={<Mappage/>}/>
     <Route path='/Eloding' element={<Lodingerrorpage/>}/>
     <Route path='/practiceapi' element={<Practicepage/>}/>
+    <Route path='/controlledform' element={<ControlledFormpage/>}/>
+    <Route path='/inputfield' element={<Field_box/>}/>
+    <Route path='/multipleinputs' element={<MultipleInputpage/>}/>
+    <Route path='/validation' element={<FormValidationpage/>}/>
+    <Route path='/formfield' element={<Formfieldpage/>}/>
+    <Route path='/registration' element={<Registerationformpage/>}/>
   </Routes>
   </BrowserRouter>
   )
