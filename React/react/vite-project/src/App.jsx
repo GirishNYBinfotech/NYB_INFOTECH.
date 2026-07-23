@@ -60,6 +60,14 @@ import FormValidationpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/For
 import Field_box from './pages_09-07-2026/Dynamic_Form_Handlingpage/Field&boxe/Field_box';
 import Registerationformpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/Registerationformpage';
 import Formfieldpage from './pages_09-07-2026/Dynamic_Form_Handlingpage/Formfieldpage';
+import Hoccall from './components_09-07-2026/High_order_Component_23-07-2026/Hoc/Hoccall';
+import Authpage from './pages_09-07-2026/HOC_23-07-2026/Authpage';
+import Loadingpage from './pages_09-07-2026/HOC_23-07-2026/Loadingpage';
+import Authorizationpage from './pages_09-07-2026/HOC_23-07-2026/Authorizationpage';
+import Reusablepage from './pages_09-07-2026/HOC_23-07-2026/Reusablepage';
+import Prioritypage from './pages_09-07-2026/HOC_23-07-2026/Componentspage';
+import Lodingpages from './pages_09-07-2026/HOC_23-07-2026/Lodingpages';
+import Componentspage from './pages_09-07-2026/HOC_23-07-2026/Componentspage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -128,6 +136,13 @@ function App() {
     <Route path='/validation' element={<FormValidationpage/>}/>
     <Route path='/formfield' element={<Formfieldpage/>}/>
     <Route path='/registration' element={<Registerationformpage/>}/>
+    <Route path='/hoc' element={<Hoccall/>}/>
+    <Route path='/authpage' element={<Authpage/>}/>
+    <Route path='/lodingpage' element={<Loadingpage/>}/>
+    <Route path='/authorization' element={<Authorizationpage/>}/>
+    <Route path='/reusable' element={<Reusablepage/>}/>
+    <Route path='/components' element={<Componentspage/>}/>
+    <Route path='/spinning' element={<Lodingpages/>}/>
   </Routes>
   </BrowserRouter>
   )
