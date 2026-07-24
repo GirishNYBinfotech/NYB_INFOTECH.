@@ -68,6 +68,14 @@ import Reusablepage from './pages_09-07-2026/HOC_23-07-2026/Reusablepage';
 import Prioritypage from './pages_09-07-2026/HOC_23-07-2026/Componentspage';
 import Lodingpages from './pages_09-07-2026/HOC_23-07-2026/Lodingpages';
 import Componentspage from './pages_09-07-2026/HOC_23-07-2026/Componentspage';
+import Conditional_renderingpage from './pages_09-07-2026/Taskpages_24-07-2026/Conditionalpage/Conditional_renderingpage';
+import Useeffectpages from './pages_09-07-2026/Taskpages_24-07-2026/Useeffectpage.jsx/Useeffectpages';
+import Dynamic_form_handlingpage from './pages_09-07-2026/Taskpages_24-07-2026/Dynamic_form_handlingpage/Dynamic_form_handlingpage';
+import HocPages from './pages_09-07-2026/Taskpages_24-07-2026/Hocpages/HocPages';
+import DynamicFormpage from './pages_09-07-2026/Taskpages_24-07-2026/Dynamic_form_handlingpage/DynamicFormpage';
+import API_integrationpage from './pages_09-07-2026/Taskpages_24-07-2026/Api_integrationspages/API_integrationpage';
+import Apicallspages from './pages_09-07-2026/Taskpages_24-07-2026/Api_integrationspages/Apicallspages';
+import Employeespages from './pages_09-07-2026/Taskpages_24-07-2026/Employeespages';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -143,6 +151,14 @@ function App() {
     <Route path='/reusable' element={<Reusablepage/>}/>
     <Route path='/components' element={<Componentspage/>}/>
     <Route path='/spinning' element={<Lodingpages/>}/>
+    <Route path='/rendering' element={<Conditional_renderingpage/>}/>
+    <Route path='/useeffects' element={<Useeffectpages/>}/>
+    <Route path='/integrations' element={<API_integrationpage/>}/>
+    <Route path='/alldynamic' element={<DynamicFormpage/>}/>
+    <Route path='/dynamic' element={<Dynamic_form_handlingpage/>}/>
+    <Route path='/higher' element={<HocPages/>}/>
+    <Route path='/calls' element={<Apicallspages/>}/>
+    <Route path='/EMP2' element={<Employeespages/>}/>
   </Routes>
   </BrowserRouter>
   )
